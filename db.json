@@ -1,0 +1,54 @@
+{
+    "menuItems": [
+      {
+        "id": 1,
+        "name": "Fresh salad",
+        "category": "Salads",
+        "description": "A healthy and refreshing salad",
+        "price": 500
+      },
+      {
+        "id": 2,
+        "name": "Cafe Latte",
+        "category": "Beverages",
+        "description": "Smooth and creamy coffee",
+        "price": 350
+      },
+      {
+        "id": 3,
+        "name": "Steak",
+        "category": "Main Course",
+        "description": "Juicy steak cooked to perfection",
+        "price": 1099
+      },
+      {
+        "id": 4,
+        "name": "Big Burger",
+        "category": "Burgers",
+        "description": "A delicious and filling burger",
+        "price": 650
+      },
+      {
+        "id": 5,
+        "name": "Shrimp",
+        "category": "Seafood",
+        "description": "Tender and flavorful shrimp",
+        "price": 800
+      },
+      {
+        "id": 6,
+        "name": "Pizza",
+        "category": "Pizzas",
+        "description": "Delicious pizza with assorted toppings",
+        "price": 1500
+      },
+      {
+        "id": 7,
+        "name": "Wine",
+        "category": "Beverages",
+        "description": "High-quality wine from selected vineyards",
+        "price": 4000
+      }
+    ]
+  }
+  
