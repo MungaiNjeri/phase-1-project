@@ -1,5 +1,5 @@
 
-const db = "http://localhost:3000/menuItems"
+const db = "https://json-server-sg8o.onrender.com/"
 
 function fetchMenuCategories() {
   const apiUrl ='https://json-server-sg8o.onrender.com/';
