@@ -1,8 +1,8 @@
 
-const db = "https://json-server-sg8o.onrender.com/"
+const db = "https://json-server-sg8o.onrender.com/menuItems"
 
 function fetchMenuCategories() {
-  const apiUrl ='https://json-server-sg8o.onrender.com/';
+  const apiUrl ='https://json-server-sg8o.onrender.com/menuItems';
   
   fetch(apiUrl)
     .then(response => {
