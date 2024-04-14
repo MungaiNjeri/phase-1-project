@@ -2,7 +2,7 @@
 const db = "http://localhost:3000/menuItems"
 
 function fetchMenuCategories() {
-  const apiUrl = 'https://api.escuelajs.co/api/v1/products';
+  const apiUrl = 'https://foodish-api.com/';
   
   fetch(apiUrl)
     .then(response => {
