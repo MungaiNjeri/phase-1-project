@@ -307,3 +307,9 @@
 .detail-favorites{
   font-size: 24px;
 }
+.detail-card:hover{
+  box-shadow: #222;
+}
+.detail-card hover :detail-image{
+  filter: brightness(0.8);
+}
