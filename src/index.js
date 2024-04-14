@@ -1,6 +1,6 @@
 
 const db = "https://json-server-sg8o.onrender.com/menuItems"
-fetch('https://json-server-sg80.onrendef.com/menuItems')
+fetch('https://json-server-sg8o.onrender.com/menuItems')
   .then(response => response.json())
   .then(data => {
     // Process the fetched data
