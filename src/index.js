@@ -2,7 +2,7 @@
 const db = "http://localhost:3000/menuItems"
 
 function fetchMenuCategories() {
-  const apiUrl = 'https://foodish-api.com/';
+  const apiUrl ='https://json-server-sg8o.onrender.com/';
   
   fetch(apiUrl)
     .then(response => {
