@@ -1,64 +1,29 @@
 
 const db = "https://json-server-sg8o.onrender.com/menuItems"
+fetch('https://json-server-sg80.onrendef.com/menuItems')
+  .then(response => response.json())
+  .then(data => {
+    // Process the fetched data
+    console.log(data); // Assuming the API returns JSON data
+    displayMenuItems(data.menuItems); // Display menu items on the website
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 
-function fetchMenuCategories() {
-  const apiUrl ='https://json-server-sg8o.onrender.com/menuItems';
+// Function to display menu items on the website
+function displayMenuItems(menuItems) {
+  const menuContainer = document.querySelector('.menu-container'); // Assuming you have a container in your HTML to display menu items
   
-  fetch(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(categories => {
-      // Assuming categories is an array of category objects
-      categories.forEach(category => {
-        // Create HTML elements for each category and add click event listeners
-        const categoryElement = document.createElement('div');
-        categoryElement.textContent = category.name;
-        categoryElement.addEventListener('click', () => handleMenuClick(category.id));
-        document.getElementById('menu-categories').appendChild(categoryElement);
-      });
-    })
-    .catch(error => {
-      console.error('Error fetching menu categories:', error);
-    });
+  menuItems.forEach(item => {
+    const menuItemElement = document.createElement('div');
+    menuItemElement.classList.add('menu-item');
+    menuItemElement.innerHTML = `
+      <h3>${item.name}</h3>
+      <p>Price: Ksh ${item.price}</p>
+      <p>Category: ${item.category}</p>
+    `;
+    menuContainer.appendChild(menuItemElement);
+  });
 }
 
-// Function to handle clicking on menu categories
-function handleMenuClick(categoryId) {
-  const apiUrl = 'https:foodish-api.com'
-  
-  fetch;(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(items => {
-      // Assuming items is an array of menu item objects
-      items.forEach(item => {
-        // Create HTML elements for each menu item and add click event listeners
-        const itemElement = document.createElement('div');
-        itemElement.textContent = $;{item.name} - Price: $;{item.price};
-        itemElement.addEventListener('click', () => handleOrderClick(item.name, item.price));
-        document.getElementById('menu-items').appendChild(itemElement);
-      });
-    })
-    .catch(error => {
-      console.error('Error fetching menu items:', error);
-    });
-}
-
-// Function to handle clicking on order details
-function handleOrderClick(name, price) {
-  console.log('Clicked on order:', name, '- Price:', price);
-  // You can add more logic here based on the order clicked
-}
-
-// Call fetchMenuCategories when the page loads
-window.onload = function () {
-  fetchMenuCategories();
-};
