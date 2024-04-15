@@ -1,54 +1,45 @@
 {
-    "menuItems": [
-      {
-        "id": 1,
-        "name": "Fresh salad",
-        "category": "Salads",
-        "description": "A healthy and refreshing salad",
-        "price": 500
-      },
-      {
-        "id": 2,
-        "name": "Cafe Latte",
-        "category": "Beverages",
-        "description": "Smooth and creamy coffee",
-        "price": 350
-      },
-      {
-        "id": 3,
-        "name": "Steak",
-        "category": "Main Course",
-        "description": "Juicy steak cooked to perfection",
-        "price": 1099
-      },
-      {
-        "id": 4,
-        "name": "Big Burger",
-        "category": "Burgers",
-        "description": "A delicious and filling burger",
-        "price": 650
-      },
-      {
-        "id": 5,
-        "name": "Shrimp",
-        "category": "Seafood",
-        "description": "Tender and flavorful shrimp",
-        "price": 800
-      },
-      {
-        "id": 6,
-        "name": "Pizza",
-        "category": "Pizzas",
-        "description": "Delicious pizza with assorted toppings",
-        "price": 1500
-      },
-      {
-        "id": 7,
-        "name": "Wine",
-        "category": "Beverages",
-        "description": "High-quality wine from selected vineyards",
-        "price": 4000
-      }
-    ]
-  }
-  
+  "menus": [
+    {
+      "id": 1,
+      "name": "shrimp",
+      "description": "yummy",
+      "category": "Seafood",
+      "price": 800,
+      "image": "images/seafood.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "pizza",
+      "description": "tasty",
+      "category": "Pizza",
+      "price": 1500,
+      "image": "images/pizza.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Wine",
+      "description": "quality wine",
+      "category": "Wine",
+      "price": 4000,
+      "image": "images/wine.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "nutrition",
+      "description": "healthy",
+      "category": "Healthy",
+      "price": 550,
+      "image": "images/healthy.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "coffee",
+      "description": "Drinks",
+      "category": "Beverages",
+      "price": 350,
+      "image": "images/coffee.jpg"
+    }
+  ]
+}
+      
